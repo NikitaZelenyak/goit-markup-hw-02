@@ -1,6 +1,55 @@
 /*  
-Цвет основгого текста #212121
+Цвет основгого текста #757575
 цвет  подсвета #2196F3  
-цвет вторичный #757575
-
+цвет вторичный  #212121
+цвест для футера rgba(255, 255, 255, 0.6);
+основной цвест страницы #F5F4FA;
  */
+:root {
+  --secondary-text-color: #0f0808;
+  --accent-color: #2196f3;
+  --accent-color-footer: rgba(255, 255, 255, 0.6);
+  --general-color-page: #f5f4fa;
+  --general-text-color: #757575;
+}
+body {
+  background-color: var(--general-color-page);
+  color: var(--general-text-color);
+}
+
+/* Header */
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+.header-link {
+  color: var(--secondary-text-color);
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+.logo {
+  color: var(--secondary-text-color);
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+/* Hero */
+.hero-title {
+  /* сделал задний фон,что б видно было цвет текста */
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+.button {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+/* Особености компании */
+.feature-title {
+  color: var(--secondary-text-color);
+}
+.feature-tetxt {
+}
+/* Занятие компаний */
