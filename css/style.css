@@ -11,19 +11,45 @@
   --accent-color-footer: rgba(255, 255, 255, 0.6);
   --general-color-page: #f5f4fa;
   --general-text-color: #757575;
+  --white-color: #ffffff;
+  --footer-color: #2f303a;
 }
 body {
   background-color: var(--general-color-page);
   color: var(--general-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 /* Header */
-.header-link:hover,
-.header-link:focus {
+.header-nav .link:hover,
+.header-nav .link:focus,
+.auth-nav .link:focus,
+.auth-nav .link:hover,
+.footer .link:focus,
+.footer .link:hover {
   color: var(--accent-color);
 }
-.header-link {
+
+.auth-nav .link {
+  color: var(--general-text-color);
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.header-nav .link {
   color: var(--secondary-text-color);
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 .logo:hover,
 .logo:focus {
@@ -31,25 +57,65 @@ body {
 }
 .logo {
   color: var(--secondary-text-color);
+  text-decoration: none;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
 }
 .logo-accent {
   color: var(--accent-color);
 }
 /* Hero */
-.hero-title {
-  /* сделал задний фон,что б видно было цвет текста */
-  background-color: var(--accent-color);
-  color: #ffffff;
+.hero {
+  background-color: var(--footer-color);
+}
+.hero .title {
+  color: var(--white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 .button {
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--accent-color);
   cursor: pointer;
 }
-/* Особености компании */
+/* Особенности компании */
 .feature-title {
   color: var(--secondary-text-color);
 }
 .feature-tetxt {
+  color: var(--general-text-color);
 }
-/* Занятие компаний */
+
+/* Занятие компании */
+.example .title {
+  color: var(--secondary-text-color);
+}
+/* команда компании */
+.team .title,
+.team-title {
+  color: var(--secondary-text-color);
+}
+/* подвал */
+.footer {
+  background-color: var(--footer-color);
+}
+.footer .footer-text {
+  color: var(--white-color);
+}
+.footer .link {
+  color: var(--accent-color-footer);
+  text-decoration: none;
+}
+.footer .logo {
+  color: var(--white-color);
+}
+li {
+  list-style-type: none;
+}
