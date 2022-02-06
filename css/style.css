@@ -6,7 +6,7 @@
 основной цвест страницы #F5F4FA;
  */
 :root {
-  --secondary-text-color: #0f0808;
+  --secondary-text-color: #212121;
   --accent-color: #2196f3;
   --accent-color-footer: rgba(255, 255, 255, 0.6);
   --general-color-page: #f5f4fa;
@@ -154,4 +154,30 @@ body {
 }
 li {
   list-style-type: none;
+}
+/* Portfolio */
+.portfolio .button:focus,
+.portfolio .button:hover {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+.portfolio .button {
+  color: var(--secondary-text-color);
+  background-color: var(--white-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.portfolio .title {
+  color: var(--secondary-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio .text {
+  font-size: 16px;
+  line-height: 1.9;
 }
